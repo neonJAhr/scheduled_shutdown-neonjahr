@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="example">
+  <schema path="/org/gnome/shell/extensions/example@example.com/" id="org.gnome.shell.extensions.example@example.com">
+
+    <key type="i" name="shutdown-max-timer-value">
+      <default>180</default>
+      <summary>summary</summary>
+      <description>Set shutdown time. Use only values greater than zero.</description>
+    </key>
+
+    <key type="i" name="wake-interval-value">
+      <default>15</default>
+      <summary>summary</summary>
+      <description>Set interval value for shutdown time. Use only values greater than zero.</description>
+    </key>
+
+    <key type="b" name="auto-shutdown-value">
+      <default>false</default>
+      <summary>summary</summary>
+      <description>Enable/Disable the shutdown timer.</description>
+    </key>
+
+    <key type="i" name="shutdown-timestamp-value">
+      <default>-1</default>
+      <summary>Scheduled shutdown timestamp.</summary>
+      <description>Unix time in seconds of scheduled shutdown or -1 if disabled.</description>
+    </key>
+
+    <key type="b" name="show-settings-value">
+      <default>true</default>
+      <summary>Show settings button</summary>
+      <description>Show/hide settings button in widget.</description>
+    </key>
+
+    <key type="b" name="show-textboxes-value">
+      <default>true</default>
+      <summary>Show notification text boxes</summary>
+      <description>Show/hide notification text boxes on screen.</description>
+    </key>
+
+    <key type="b" name="root-mode-value">
+      <default>false</default>
+      <summary>Root mode</summary>
+      <description>Set root mode on/off. In root mode powering off is done via 'pkexec' and 'shutdown' terminal command.</description>
+    </key>
+
+    <key type="s" name="show-shutdown-mode-value">
+      <default>"poweroff,suspend"</default>
+      <summary>Shown shutdown modes</summary>
+      <description>Comma-separated shutdown modes which are shown in the popup menu</description>
+    </key>
+
+    <key type="s" name="shutdown-mode-value">
+      <default>"poweroff"</default>
+      <summary>Use mode</summary>
+      <description>Mode to use for timer action</description>
+    </key>
+
+  </schema>
+</schemalist>
+

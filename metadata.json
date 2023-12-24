@@ -1,0 +1,13 @@
+{
+
+	"name" : "Scheduled Shutdown",
+	"description" : "Force GNOME to shutdown at a specific time",
+	"uuid" : "scheduled_shutdown@neonjahr",
+	"shell-version": [
+    		"42"
+ 		 ],
+	"settings-schema": "org.gnome.shell.extensions.scheduled_shutdown-neonjahr",
+	"version" : 1,
+	"url" : ""
+	
+}
