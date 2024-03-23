@@ -2,19 +2,25 @@
 <schemalist gettext-domain="example">
   <schema path="/org/gnome/shell/extensions/example@example.com/" id="org.gnome.shell.extensions.example@example.com">
 
-    <key type="i" name="shutdown-max-timer-value">
+    <key type="i" name="hour-shutdown-value">
+      <default>180</default>
+      <summary>summary</summary>
+      <description>Set shutdown time. Use only values greater than zero.</description>
+    </key>
+    
+    <key type="i" name="minute-shutdown-value">
       <default>180</default>
       <summary>summary</summary>
       <description>Set shutdown time. Use only values greater than zero.</description>
     </key>
 
-    <key type="i" name="wake-interval-value">
+    <key type="i" name="increment-value">
       <default>15</default>
       <summary>summary</summary>
       <description>Set interval value for shutdown time. Use only values greater than zero.</description>
     </key>
 
-    <key type="b" name="auto-shutdown-value">
+    <key type="b" name="power-shutdown-value">
       <default>false</default>
       <summary>summary</summary>
       <description>Enable/Disable the shutdown timer.</description>
